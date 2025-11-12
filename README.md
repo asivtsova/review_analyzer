@@ -20,6 +20,8 @@
 - `docker-compose.yml` - Докер-файл
 - `requirements.txt` - Зависимости
 - `README.md` - Документация
+- `tests/test_analysis.py` - Тесты функций анализа
+- `tests/test_dataloader.py` - Тесты загрузки и обработки данных
 
 
 ## Данные
@@ -69,3 +71,12 @@ cd review_analyzer
 2. Поместите файл с данными в папку data/
 3. Запустите с Docker Compose
 docker-compose up -d
+
+### Запуск тестов
+
+```bash
+# Установите зависимости для тестирования
+pip install pytest
+
+# Запустите все тесты
+pytest
